@@ -1,0 +1,1024 @@
+.mediaViewInfo {
+	--web-view-name: V9.1;
+	--web-view-id: V9_1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: V9_1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#V9_1 {
+	position: absolute;
+	background: #E5E5E5;
+	width: 1920px;
+	height: 5521px;
+	background-color: rgba(22,32,47,1);
+	overflow: hidden;
+	--web-view-name: V9.1;
+	--web-view-id: V9_1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#Titlebild {
+	position: absolute;
+	width: 1458px;
+	height: 1070px;
+	left: 222px;
+	top: 179px;
+	overflow: visible;
+}
+#Titlebild_n {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 207px;
+	top: 3093px;
+	overflow: visible;
+}
+#Titlebild_o {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 207px;
+	top: 3487px;
+	overflow: visible;
+}
+#Titlebild_p {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 207px;
+	top: 3881px;
+	overflow: visible;
+}
+#Titlebild_q {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 207px;
+	top: 4273px;
+	overflow: visible;
+}
+#Titlebild_r {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 725px;
+	top: 3091px;
+	overflow: visible;
+}
+#Titlebild_s {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 725px;
+	top: 3485px;
+	overflow: visible;
+}
+#Titlebild_t {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 725px;
+	top: 3879px;
+	overflow: visible;
+}
+#Titlebild_u {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 725px;
+	top: 4271px;
+	overflow: visible;
+}
+#Titlebild_v {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 1243px;
+	top: 3091px;
+	overflow: visible;
+}
+#Titlebild_w {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 1243px;
+	top: 3485px;
+	overflow: visible;
+}
+#Titlebild_x {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 1243px;
+	top: 3879px;
+	overflow: visible;
+}
+#Titlebild_y {
+	position: absolute;
+	width: 470px;
+	height: 345px;
+	left: 1243px;
+	top: 4271px;
+	overflow: visible;
+}
+.Rectangle_7 {
+	position: absolute;
+	overflow: visible;
+	width: 45px;
+	height: 36px;
+	left: 1739px;
+	top: 67px;
+}
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 155px;
+	left: 0px;
+	top: 60px;
+}
+.Rectangle_6 {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 59px;
+	left: -4px;
+	top: 1194px;
+}
+.Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 238px;
+	height: 1093px;
+	left: 0px;
+	top: 140px;
+}
+.Rectangle_4 {
+	position: absolute;
+	overflow: visible;
+	width: 252px;
+	height: 1066px;
+	left: 1668px;
+	top: 167px;
+}
+.Rectangle_11 {
+	filter: drop-shadow(0px 3px 6px rgba(4, 5, 47, 0.345));
+	position: absolute;
+	overflow: visible;
+	width: 1938px;
+	height: 141px;
+	left: 0px;
+	top: 0px;
+}
+#FOOTPRINTS {
+	position: absolute;
+	left: 66px;
+	top: 25px;
+	overflow: hidden;
+	width: 612px;
+	height: 65px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(255,255,255,1);
+}
+.Rectangle_13 {
+	position: absolute;
+	overflow: visible;
+	width: 98px;
+	height: 36px;
+	left: 733px;
+	top: 67px;
+}
+.Rectangle_12 {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 348px;
+	left: 0px;
+	top: 5173px;
+}
+#HOME_ {
+	position: absolute;
+	left: 744px;
+	top: 67px;
+	overflow: hidden;
+	width: 80px;
+	height: 65px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(25,23,80,1);
+}
+#HOME {
+	opacity: 0.795;
+	position: absolute;
+	left: 207px;
+	top: 5249px;
+	overflow: hidden;
+	width: 125px;
+	height: 65px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(118,115,101,1);
+}
+#AUSSTELLUNG {
+	position: absolute;
+	left: 888px;
+	top: 67px;
+	overflow: hidden;
+	width: 195px;
+	height: 65px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: V9_2.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+#AUSSTELLUNG_bb {
+	opacity: 0.795;
+	position: absolute;
+	left: 209px;
+	top: 5289px;
+	overflow: hidden;
+	width: 195px;
+	height: 65px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(118,115,101,1);
+}
+#K_NSTLER {
+	position: absolute;
+	left: 1147px;
+	top: 67px;
+	overflow: hidden;
+	width: 147px;
+	height: 65px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: V9_3.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+#K_NSTLER_bd {
+	opacity: 0.795;
+	position: absolute;
+	left: 207px;
+	top: 5329px;
+	overflow: hidden;
+	width: 147px;
+	height: 65px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(118,115,101,1);
+}
+#KATALOG {
+	opacity: 0.795;
+	position: absolute;
+	left: 207px;
+	top: 5369px;
+	overflow: hidden;
+	width: 147px;
+	height: 65px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(118,115,101,1);
+}
+#KATALOG_bf {
+	position: absolute;
+	left: 1358px;
+	top: 66px;
+	overflow: hidden;
+	width: 124px;
+	height: 65px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: V9_4.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+#KONTAKT {
+	position: absolute;
+	left: 1546px;
+	top: 67px;
+	overflow: hidden;
+	width: 131px;
+	height: 65px;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: V9_5.html;
+	cursor: pointer;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+#KONTAKT_bh {
+	opacity: 0.795;
+	position: absolute;
+	left: 207px;
+	top: 5409px;
+	overflow: hidden;
+	width: 131px;
+	height: 65px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(118,115,101,1);
+}
+.Rectangle_9 {
+	position: absolute;
+	overflow: visible;
+	width: 45px;
+	height: 36px;
+	left: 1738px;
+	top: 68px;
+}
+#IMPRESSUM {
+	opacity: 0.795;
+	position: absolute;
+	left: 954px;
+	top: 5249px;
+	overflow: hidden;
+	width: 345px;
+	height: 48px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(118,115,101,1);
+}
+#DE_ {
+	position: absolute;
+	left: 1742px;
+	top: 67px;
+	overflow: hidden;
+	width: 47px;
+	height: 39px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(21,0,64,1);
+}
+#EN {
+	position: absolute;
+	left: 1790px;
+	top: 66px;
+	overflow: hidden;
+	width: 47px;
+	height: 39px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+.Rectangle_10 {
+	filter: drop-shadow(0px 3px 6px rgba(4, 5, 47, 0.345));
+	position: absolute;
+	overflow: visible;
+	width: 1942px;
+	height: 1436px;
+	left: -4px;
+	top: 1427px;
+}
+#nachhaltige_Geschichten_ {
+	position: absolute;
+	left: 71px;
+	top: 77px;
+	overflow: hidden;
+	width: 688px;
+	height: 65px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	color: rgba(255,211,0,1);
+}
+#REPORTAGEN {
+	position: absolute;
+	left: 184px;
+	top: 2988px;
+	overflow: hidden;
+	width: 358px;
+	height: 65px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(255,255,255,1);
+}
+#_Es_gibt_keine_Passagiere___au {
+	position: absolute;
+	left: 163px;
+	top: 1632px;
+	overflow: hidden;
+	width: 574px;
+	height: 470px;
+	line-height: 58px;
+	margin-top: -11px;
+	text-align: center;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	color: rgba(255,211,0,1);
+}
+#Wie_k_nnen_wir_leben__produzie {
+	position: absolute;
+	left: 796px;
+	top: 1526px;
+	overflow: hidden;
+	width: 962px;
+	height: 541px;
+	line-height: 40px;
+	margin-top: -7px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	color: rgba(255,255,255,1);
+}
+#In_den_Projekten_geht_es_beisp {
+	position: absolute;
+	left: 184px;
+	top: 2082px;
+	overflow: hidden;
+	width: 1574px;
+	height: 710px;
+	line-height: 40px;
+	margin-top: -7px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 26px;
+	color: rgba(255,255,255,1);
+}
+#Wie_k_nnen_wir_leben__produzie_bs {
+	opacity: 0.795;
+	position: absolute;
+	left: 954px;
+	top: 5289px;
+	overflow: hidden;
+	width: 754px;
+	height: 185px;
+	text-align: left;
+	font-family: DIN Alternate;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	color: rgba(118,115,101,1);
+}
+#Group_6 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 725px;
+	top: 3389px;
+	overflow: visible;
+}
+#Group_4 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32 {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_20 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 1243px;
+	top: 3389px;
+	overflow: visible;
+}
+#Group_4_by {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_bz {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_b {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_21 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 1243px;
+	top: 3783px;
+	overflow: visible;
+}
+#Group_4_b {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_b {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_ca {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_22 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 1243px;
+	top: 4177px;
+	overflow: visible;
+}
+#Group_4_ca {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_ca {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_cb {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_23 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 1243px;
+	top: 4569px;
+	overflow: visible;
+}
+#Group_4_cb {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_cb {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_cc {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_24 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 725px;
+	top: 4569px;
+	overflow: visible;
+}
+#Group_4_ce {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_cf {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_cg {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_25 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 725px;
+	top: 4177px;
+	overflow: visible;
+}
+#Group_4_ci {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_cj {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_ck {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_26 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 207px;
+	top: 4177px;
+	overflow: visible;
+}
+#Group_4_cm {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_cn {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_co {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_27 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 207px;
+	top: 4578px;
+	overflow: visible;
+}
+#Group_4_cq {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_cr {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_cs {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_17 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 207px;
+	top: 3391px;
+	overflow: visible;
+}
+#Group_4_cu {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_cv {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_cw {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_18 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 207px;
+	top: 3785px;
+	overflow: visible;
+}
+#Group_4_cy {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_cz {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_c {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}
+#Group_19 {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 725px;
+	top: 3783px;
+	overflow: visible;
+}
+#Group_4_c {
+	position: absolute;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_32_c {
+	position: absolute;
+	overflow: visible;
+	width: 470px;
+	height: 47px;
+	left: 0px;
+	top: 0px;
+}
+#Andreas_Helle___F_nf_Jahreszei_da {
+	filter: blur(13.147px);
+	position: absolute;
+	left: 8px;
+	top: 8px;
+	overflow: hidden;
+	width: 463px;
+	height: 31px;
+	line-height: 31px;
+	margin-top: -4px;
+	text-align: left;
+	font-family: Andale Mono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 23px;
+	color: rgba(8,13,39,1);
+}

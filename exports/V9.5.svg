@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1261" viewBox="0 0 1920 1261">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-V9.5);
+      }
+
+      .cls-2 {
+        fill: #1de38b;
+      }
+
+      .cls-3 {
+        fill: #283344;
+      }
+
+      .cls-11, .cls-4, .cls-5, .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        font-size: 48px;
+      }
+
+      .cls-10, .cls-11, .cls-13, .cls-5 {
+        font-family: SegoeUI, Segoe UI;
+      }
+
+      .cls-6, .cls-8, .cls-9 {
+        font-size: 30px;
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-9 {
+        font-family: SegoeUI-Bold, Segoe UI;
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        fill: #767365;
+        font-size: 24px;
+        opacity: 0.795;
+      }
+
+      .cls-8 {
+        fill: #191750;
+      }
+
+      .cls-9 {
+        fill: #150040;
+      }
+
+      .cls-10, .cls-12 {
+        fill: #ffd300;
+      }
+
+      .cls-10 {
+        font-size: 20px;
+      }
+
+      .cls-11 {
+        font-size: 26px;
+      }
+
+      .cls-13, .cls-14 {
+        fill: #010246;
+      }
+
+      .cls-13 {
+        font-size: 63px;
+        letter-spacing: 0.125em;
+      }
+
+      .cls-15 {
+        fill: #16202f;
+      }
+
+      .cls-16 {
+        filter: url(#Path_2);
+      }
+
+      .cls-17 {
+        filter: url(#Rectangle_11);
+      }
+    </style>
+    <filter id="Rectangle_11" x="-9" y="-6" width="1938" height="141" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#04052f" flood-opacity="0.345"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_2" x="-9" y="210" width="1122.064" height="138" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#04052f" flood-opacity="0.345"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-V9.5">
+      <rect width="1920" height="1261"/>
+    </clipPath>
+  </defs>
+  <g id="V9.5" class="cls-1">
+    <rect class="cls-15" width="1920" height="1261"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" class="cls-2" width="45" height="36" transform="translate(1739 67)"/>
+    <g class="cls-17" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <rect id="Rectangle_11-2" data-name="Rectangle 11" class="cls-3" width="1920" height="123"/>
+    </g>
+    <rect id="Rectangle_14" data-name="Rectangle 14" class="cls-4" width="147" height="34" transform="translate(1533 67)"/>
+    <text id="FOOTPRINTS" class="cls-5" transform="translate(66 25)"><tspan x="0" y="52">FOOTPRINTS</tspan></text>
+    <rect id="Rectangle_12" data-name="Rectangle 12" class="cls-3" width="1920" height="348" transform="translate(0 942)"/>
+    <text id="HOME_" data-name="HOME " class="cls-6" transform="translate(744 67)"><tspan x="0" y="32">HOM</tspan></text>
+    <text id="HOME" class="cls-7" transform="translate(207 1018)"><tspan x="0" y="26">HOME</tspan></text>
+    <text id="AUSSTELLUNG" class="cls-6" transform="translate(888 67)"><tspan x="0" y="32">AUSSTELLUN</tspan></text>
+    <text id="AUSSTELLUNG-2" data-name="AUSSTELLUNG" class="cls-7" transform="translate(209 1058)"><tspan x="0" y="26">AUSSTELLUNG</tspan></text>
+    <text id="KÜNSTLER" class="cls-6" transform="translate(1147 67)"><tspan x="0" y="32">KÜNSTLE</tspan></text>
+    <text id="KÜNSTLER-2" data-name="KÜNSTLER" class="cls-7" transform="translate(207 1098)"><tspan x="0" y="26">KÜNSTLER</tspan></text>
+    <text id="KATALOG" class="cls-7" transform="translate(207 1138)"><tspan x="0" y="26">KATALOG</tspan></text>
+    <text id="KATALOG-2" data-name="KATALOG" class="cls-6" transform="translate(1358 66)"><tspan x="0" y="32">KATALO</tspan></text>
+    <text id="KONTAKT" class="cls-8" transform="translate(1546 67)"><tspan x="0" y="32">KONTAK</tspan></text>
+    <text id="KONTAKT-2" data-name="KONTAKT" class="cls-7" transform="translate(207 1178)"><tspan x="0" y="26">KONTAKT</tspan></text>
+    <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-4" width="45" height="36" transform="translate(1738 68)"/>
+    <text id="IMPRESSUM" class="cls-7" transform="translate(954 1018)"><tspan x="0" y="26">IMPRESSUM</tspan></text>
+    <text id="DE_" data-name="DE " class="cls-9" transform="translate(1742 67)"><tspan x="0" y="32">DE </tspan></text>
+    <text id="EN" class="cls-6" transform="translate(1790 66)"><tspan x="0" y="32">EN</tspan></text>
+    <text id="nachhaltige_Geschichten_" data-name="nachhaltige Geschichten " class="cls-10" transform="translate(71 77)"><tspan x="0" y="22">nachhaltige Geschichten </tspan></text>
+    <text id="Projektleitung_Projektleitung_Projektleitung_Projektleitung_" data-name="Projektleitung 
+Projektleitung 
+Projektleitung 
+Projektleitung " class="cls-11" transform="translate(129 437)"><tspan x="0" y="28">Projektleitung </tspan><tspan x="0" y="68">Projektleitung </tspan><tspan x="0" y="108">Projektleitung </tspan><tspan x="0" y="148">Projektleitung </tspan></text>
+    <text id="Name_Name_Name_Name_Name_Name_Name_Name_" data-name="Name Name 
+Name Name 
+Name Name 
+Name Name " class="cls-11" transform="translate(433 437)"><tspan x="0" y="28">Name Name </tspan><tspan x="0" y="68">Name Name </tspan><tspan x="0" y="108">Name Name </tspan><tspan x="0" y="148">Name Name </tspan></text>
+    <text id="Wie_k_nnen_wir_leben_produzieren_und_konsumieren_ohne_die_Grundlagen_menschlichen_Lebens_auf_der_Erde_aufzuzehren_Hinterl_sst_unsere_Lebensweise_einen_kologischen_Fu_abdruck_der_auf_Dauer_zu_gro_ist_f_r_unseren_Planeten_Und_wie_sieht_ein_nachhaltig_" data-name="Wie kˆnnen wir leben, produzieren und konsumieren, ohne die Grundlagen menschlichen Lebens auf der Erde aufzuzehren? Hinterl‰sst unsere Lebensweise einen ˆkologischen Fuﬂabdruck, der auf Dauer zu groﬂ ist f¸r unseren Planeten? Und wie sieht ein nachhaltig " class="cls-7" transform="translate(954 1058)"><tspan x="0" y="26">Wie kˆnnen wir leben, produzieren und konsumieren, ohne die </tspan><tspan x="0" y="58">Grundlagen menschlichen Lebens auf der Erde aufzuzehren? </tspan><tspan x="0" y="90">Hinterl‰sst unsere Lebensweise einen ˆkologischen Fuﬂabdruck, </tspan><tspan x="0" y="122">der auf Dauer zu groﬂ ist f¸r unseren Planeten? Und wie sieht ein </tspan><tspan x="0" y="154">nachhaltig gef¸hrtes, sinnerf¸lltes Leben im Einklang mit der Natur </tspan></text>
+    <g class="cls-16" transform="matrix(1, 0, 0, 1, 0, 0)">
+      <path id="Path_2-2" data-name="Path 2" class="cls-12" d="M0,0H1104.064V120H0Z" transform="translate(0 216)"/>
+    </g>
+    <text id="KONTAKT-3" data-name="KONTAKT" class="cls-13" transform="translate(822 248)"><tspan x="0" y="68">KONTAK</tspan></text>
+    <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-14" width="1942" height="167" transform="translate(0 1260)"/>
+  </g>
+</svg>
