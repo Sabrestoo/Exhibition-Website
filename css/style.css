@@ -1,0 +1,137 @@
+:root {
+    --main-bg-color: #16202F;
+    --secondary-bg-color: #283344;
+    --main-yellow: #FFD300;
+    --main-white: #FFFFFF;
+    --active-menu-color: #191750;
+    --main-grey: #767365;
+}
+
+@font-face {
+    font-family: 'Andale-Mono';
+    src: url(./fonts/Andale-Mono/AndaleMono.ttf);
+}
+
+@font-face {
+    font-family: 'DIN-Alternate-Bold';
+    src: url(./fonts/DIN\ Alternate\ Bold/DIN\ Alternate\ Bold.otf);
+}
+
+@font-face {
+    font-family: 'Futura-Condensed-Medium';
+    src: url(./fonts/Futura\ Condensed\ Medium/Futura\ Condensed\ Medium.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1 0 auto;
+    background: var(--main-bg-color);
+   }
+
+
+/* Navigation bar and logo */
+
+#logo img {
+    width: 200px;
+}
+
+#nav-wrapper {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    font-family: 'DIN-Alternate-Bold';
+}
+
+#nav-bar {
+    list-style-type: none;
+    overflow: hidden;
+    margin-right: 3%;
+    display: flex;
+}
+
+li a {
+display: block;
+color: var(--main-white);
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: var(--main-bg-color);
+}
+
+.active {
+    color: var(--main-bg-color);
+    background-color: var(--main-white);
+}
+
+/* Footer styles */
+
+footer {
+    z-index: 100;
+    flex-shrink: 0;
+    background: var(--secondary-bg-color);
+    font-family: 'DIN-Alternate-Bold';
+    font-size: 1.5em;
+    color: var(--main-grey);
+}
+
+#footer-links ul {
+    display: flex;
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;   
+}
+
+@media (max-width: 768px) {
+
+    #nav-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #nav-bar, #nav-bar li {
+       display: none;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #footer-links ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 12px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    
+    #footer-links ul li {
+        display: block;
+        border: .5px solid;
+        border-color: var(--main-bg-color);
+        border-radius: 3px;
+    }
+  
+}
