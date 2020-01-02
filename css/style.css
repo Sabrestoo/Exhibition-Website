@@ -42,7 +42,6 @@ body {
 }
 
 .banner {
-    height:64px;
     width: 100%;
     background-color: var(--main-yellow);
     color: var(--main-bg-color);
@@ -376,7 +375,6 @@ footer {
         .banner {
             max-width: 50vw;
             margin-top: 3rem;
-            margin-bottom: 2rem;;
         }
 
         #kunstler-banner {
@@ -401,7 +399,7 @@ footer {
 
         #home-img {
             width: 65%;
-            align-self: center;
+            align-self: flex-start;
             justify-self: center;
         }
 
@@ -452,8 +450,8 @@ footer {
         }
 
         .card img {
-            width:100%;
-        }
+            width:375px;
+        } 
 
         .card {
             background-color: var(--main-white);
@@ -550,7 +548,7 @@ footer {
 
         /*small image styles */
         .img-sm {
-            
+            max-width: 375px;
         }
 
         /* Lightbox fullscreen images styles */
