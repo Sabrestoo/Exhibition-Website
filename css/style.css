@@ -167,22 +167,70 @@ footer {
         .home-container {
             display: grid;
             grid-template-columns: 1fr;
+            width: 100%;
+            font-size: .9rem;
+        }
+
+        .article-1 {
+            height: 650%;
+            margin-bottom: 3rem;
         }
 
         #home-img {
-            width: 70%;
+            padding-top: 5rem;
+            width: 100%;           
         }
-       
-        .article-2 {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr;
-            padding: 1rem;
-        } 
 
-        .article-2 #section-1 {
+        .article-2 {
+            background-color: var(--secondary-bg-color);
+            display: grid;
+            grid-template-columns: 1fr;  
+            width: 100%;        
+        }
+
+        .section {
+            justify-content: center;
+            align-self: center;
+            padding: 1rem 2rem;
+        }
+
+        #section-1 {
             color: var(--main-yellow);
         }
+
+        #section-2 {
+            background-color: var(--main-bg-color);
+        }
+
+        .article-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-bottom: 3rem;
+            gap: 2rem;
+        }
+      
+        .reportagen-title {
+            margin:0;
+            padding:2rem;
+        }
+
+        .card img {
+            width:100%;
+        }
+
+        .card {
+            background-color: var(--main-white);
+            max-width: 375px;
+            justify-self: center;
+        }
+
+        .card-text {
+            padding:1px 16px;
+            color: var(--main-bg-color);
+        }
+
+
+
 
         /* About */
 
@@ -284,7 +332,6 @@ footer {
 
           /* Kontakt mobile */
 
-            /* Kontakt */
 
           .contact-details {
             display: grid;
@@ -340,31 +387,34 @@ footer {
 
         /* home */
 
-
-
-        .in-text-link {
-            text-decoration: none;
-            color: var(--main-yellow);
-        }
-
         .home-container {
             display: grid;
             grid-template-columns: 1fr;
         }
 
+        .article-1 {
+            display: grid;
+            grid-template-columns: 1fr;
+            height: 100vh;
+            width: 100%;
+        }
+
         #home-img {
-            width: 60%;
-            margin: auto;
-            padding-top: 3rem;
-            margin-bottom: 5%;
+            width: 65%;
+            align-self: center;
+            justify-self: center;
         }
 
         .article-2 {
             background-color: var(--secondary-bg-color);
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            padding: 0 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-around;
+            grid-template-areas: 
+            "sec-1 sec-2"
+            "sec-3 sec-3";
+            gap: 1rem;
+            padding: 0 5rem;
         }
 
         .section {
@@ -372,32 +422,33 @@ footer {
         }
 
         #section-1 {
+            grid-area: sec-1;
+            width: 60%;
+            justify-self: center;
+            align-self: center;
             color: var(--main-yellow);
         }
 
-        .quotes {
-            width: 50%;
-            text-align: center;
-            margin: auto;
-            padding-top: 5%;
+        #section-2 {
+            grid-area: sec-2;
         }
 
-
-        .article-2 #section-3 {
-            grid-column: 1/3;
+        #section-3 {
+            grid-area: sec-3;
         }
 
         .article-3 {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin:12%;
+            grid-template-columns: repeat(3,1fr);
+            gap: 1.5rem;
+            justify-content: space-around;
+            margin-bottom: 5rem;
         }
-
+      
         .reportagen-title {
             grid-column: 1/4;
             margin:0;
-            padding:0;
+            padding:2rem;
         }
 
         .card img {
@@ -406,6 +457,8 @@ footer {
 
         .card {
             background-color: var(--main-white);
+            max-width: 375px;
+            justify-self: center;
         }
 
         .card-text {
