@@ -61,6 +61,7 @@ body {
 
 .link {
     color: var(--main-yellow);
+    text-decoration: none;
 }
 
 
@@ -133,7 +134,7 @@ footer {
 
 .details {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     background-color: var(--secondary-bg-color);
 }
 
@@ -375,8 +376,15 @@ footer {
             grid-template-columns: 1fr;
             margin-bottom: 10%;
         }
+        
+        .details-wrapper {
+            display: grid;
+            gap: 1rem;
+            width: 100%;
+            padding: 1rem;
+        }
 
-        #when, #where, #directions, #catalogue-link {
+        /* #when, #where, #directions, #catalogue-link {
             display: grid;
             grid-template-columns: 1fr;
             gap: .5rem;
@@ -399,7 +407,7 @@ footer {
             width: 60%;
             margin: auto;
             padding-bottom: 10%;
-        }
+        } */
 
         /* katalog mobile */
 
@@ -407,7 +415,7 @@ footer {
             display: grid;
             grid-template-columns: 1fr;
             min-height: 35vh;
-            padding: 2rem;
+            padding: 1rem;
         }
 
         .katalog-container img {
@@ -426,9 +434,19 @@ footer {
 
           .contact-details {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); 
+            grid-template-columns: 1fr; 
             padding: .5rem;
+            gap: 1rem;
         }
+
+        .contact-details-wrapper {
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        /* .contact-details-wrapper p a {
+            text-align: center;
+        } */
 
         /* footer mobile */
 
@@ -600,7 +618,7 @@ footer {
             visibility: hidden;
         }
 
-        /* Austellung */
+        /* Austellung desktop */
 
         .article-austellung {
             display: grid;
@@ -616,14 +634,23 @@ footer {
 
         .details {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: 1fr;
             background-color: var(--secondary-bg-color);
-            grid-template-areas: 
+            gap: 1rem;
+            justify-items: center;            
+            /* grid-template-areas: 
             ". when where directions ."
-            ". link . . .";
+            ". link . . ."; */
         }
 
-        #when {
+        .details-wrapper {
+            display: grid;
+            gap: 1rem;
+            width: 60%;
+            padding: 1rem;
+        }
+
+        /* #when {
             grid-area: when;
         }
 
@@ -637,13 +664,13 @@ footer {
 
         #catalogue-link {
             grid-area: link;
-        }
+        } */
 
         .article-austellung img {
             padding-bottom: 2rem;
         }
 
-
+/* 
         #when, #where, #directions, #catalogue-link {
             display: grid;
             grid-template-columns: 1fr;
@@ -660,7 +687,7 @@ footer {
         #when p, #where p, #directions p {
             padding-bottom: 1rem;
             width: 80%;
-        }
+        } */
 
 
         /* images and lightbox */
@@ -784,30 +811,41 @@ footer {
                 "link link link";
         }
 
-        /* Katalog */
+        /* Katalog desktop */
 
         .katalog-container {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             min-height: 35vh;
-            padding: 5rem;
+            padding: 2rem;
+            justify-items: center;
         }
 
-        .katalog-container img {
+        /* .katalog-container img {
             width: 80%;
             justify-self: center;
-        }
+        } */
 
-        /* Kontakt */
+       
+
+
+
+        /* Kontakt desktop */
 
         .contact-details {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns:  1fr;
             gap: 2rem;
-            grid-template-areas: 
-            "p-m p-n . .";
+            justify-items: center;
+            padding-bottom: 1rem;
+            /* grid-template-areas: 
+            "p-m p-n . ."; */
         }
 
+        .contact-details-wrapper {
+            width: 60%;
+        }
+/* 
         .project-manager {
             grid-area: p-m; 
             justify-self: center;           
@@ -815,7 +853,7 @@ footer {
 
         .project-name {
             grid-area: p-n;           
-        }
+        } */
 
         
 }
