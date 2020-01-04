@@ -58,11 +58,3 @@ function closeNav() {
   links.style.display = 'none';
   }
 }
-
-
-
-
-
-    
- 
- 

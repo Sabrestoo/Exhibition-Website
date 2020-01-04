@@ -39,6 +39,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: var(--main-bg-color);
 }
 
 .banner {
@@ -147,6 +148,10 @@ footer {
       max-height: 375px !important;
   }
 
+  .img-med {
+     max-width: 500px;
+     max-height: 450px;    
+  }
 
 .img-lg {
     width: 1350px !important;
@@ -590,7 +595,7 @@ footer {
             border-radius: 3px;
         }
 
-        .card a {
+        .card img, .card a {
             align-self: flex-start;
             padding-top: 1rem;
             justify-self: center;
@@ -650,71 +655,56 @@ footer {
             padding: 1rem;
         }
 
-        /* #when {
-            grid-area: when;
-        }
-
-        #where {
-            grid-area: where;
-        }
-
-        #directions {
-            grid-area: directions;
-        }
-
-        #catalogue-link {
-            grid-area: link;
-        } */
-
         .article-austellung img {
             padding-bottom: 2rem;
         }
 
-/* 
-        #when, #where, #directions, #catalogue-link {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            justify-content: space-around;
-        }
-
-        #when h3, #where h3, #directions h3 {
-            padding-top: 1rem;
-            width: 80%;
-           
-        }
-
-        #when p, #where p, #directions p {
-            padding-bottom: 1rem;
-            width: 80%;
-        } */
-
 
         /* images and lightbox */
 
-        #lightbox {
-            display: none;
+        
+        .lightbox {
+                       
             position: fixed;
             z-index: 1000;
-            padding-top: 100px;
+            padding-top: 50px;
             left: 0;
             top: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             background-color: var(--secondary-bg-color);
             margin: auto;
             overflow: auto;
         }
 
+        .lightbox-img-content {
+            display: grid;
+            justify-items: center;
+            align-items: end;
+            
+        }
+        
+        .lightbox-content .biography {
+            width: 80%;
+            justify-self: center;
+            align-self: end;
+            font-size: .9rem;
+            color: var(--main-white);
+            padding: 1rem;
+        }
 
         .lightbox-content {
             position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
             background-color: var(--secondary-bg-color);
             margin: auto;
             padding: 0;
-            width: 70%;
+            max-width: 90%;
+            min-width: 90%;
+            height: 700px;
             opacity: 1;
-        /* Calculate max width */
+        
         }
 
         /* The Close Button */
@@ -769,7 +759,7 @@ footer {
         .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
-
+/* --------------------------------------------- */
         /* About */
 
         .about .name {
@@ -825,10 +815,6 @@ footer {
             width: 80%;
             justify-self: center;
         } */
-
-       
-
-
 
         /* Kontakt desktop */
 
