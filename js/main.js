@@ -8,7 +8,7 @@ function changeHamburger() {
 }
 
 const links = document.getElementById("nav-bar");
-//const logo = document.querySelector('#logo');
+const logo = document.querySelector('#logo');
 
 const navBar = document.getElementById('nav-wrapper');
 
@@ -31,15 +31,15 @@ const navBar = document.getElementById('nav-wrapper');
 
  
 function navStyleChangeOnResize(){
-  if (window.innerWidth > 768 && links.style.display === "none"){
+  if (window.innerWidth > 860 && links.style.display === "none"){
     links.style.display = "flex";
   }
-  if (window.innerWidth < 768) 
+  if (window.innerWidth < 861) 
     {
       links.style.display = "none";
+      
     }
 }
-
 
  links.addEventListener('click', closeNavChangeBurger);
 

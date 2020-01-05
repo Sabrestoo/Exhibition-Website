@@ -32,6 +32,10 @@
     padding: 0;
 }
 
+html {
+    overflow-y: scroll;
+}
+
 html, body {
     height: 100%;
 }
@@ -72,6 +76,7 @@ body {
 #logo img {
     width: 200px;
 }
+
 
 #nav-wrapper {
     position: fixed;
@@ -114,9 +119,9 @@ footer {
     z-index: 100;
     flex-shrink: 0;
     background: var(--secondary-bg-color);
-  
     font-size: 1.5em;
     color: var(--main-grey);
+    width: 100%;
 }
 
 #footer-links ul {
@@ -124,6 +129,31 @@ footer {
     list-style-type: none;
     text-decoration: none;
     justify-content: center;   
+}
+
+.pib-logo {
+    grid-area: pib;
+    align-self: center;
+}
+
+.fotocentrum-logo {
+    grid-area: fc;
+    align-self: center;
+}
+
+.footer-logos {
+    display: grid;
+    grid-template-areas: 
+    ". pib fc . . .";
+}
+
+.fotocentrum-logo img {
+    max-height: 150px;  
+}
+
+.pib-logo img  {
+    width: 75px;
+    padding-top: .5rem;
 }
 
 /* About  */
@@ -157,9 +187,13 @@ footer {
     width: 1350px !important;
 }
 
+.article-2 .section .quotes p {
+    padding: 1rem 0;
+}
+
 
 /* Mobile */
-    @media (max-width: 768px) {
+    @media (max-width: 860px) {
         #logo {
             position: fixed;
             top:10px;
@@ -239,7 +273,7 @@ footer {
             height: 50px;
             position: relative;
             top: 75px;
-            margin-bottom: 6rem;
+            margin-bottom: 3rem;
         }
 
         /* home mobile */
@@ -252,7 +286,7 @@ footer {
         }
 
         .article-1 {
-            height: 650%;
+            
             margin-bottom: 3rem;
         }
 
@@ -334,6 +368,46 @@ footer {
             visibility: hidden;
         }
 
+          /* images and lightbox mobile */
+
+        .lightbox {
+            max-width: 100vw;   
+            background-color: var(--secondary-bg-color);                    
+        }
+        
+        .images {
+            display: block;
+            margin: auto;
+        }
+
+        .images img {
+            max-width: 100%;
+        }
+
+        .lightbox-content .biography {
+            color: var(--main-white);
+            width: 90%;
+            margin: auto;
+            padding: 1rem 0;
+        }
+
+        .lightbox-img-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+        }
+
+        /* The Close Button */
+        .close {
+           display:none;
+        }
+ 
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            display: none;
+        }
+
 
         /* About */
 
@@ -364,13 +438,13 @@ footer {
     
        
 
-        /* Austellung mobile */
+        /* ausstellung mobile */
 
-        #austellung-a1 {
+        #ausstellung-a1 {
             margin-bottom: 3rem;
         }
 
-        #austellung-img {
+        #ausstellung-img {
             max-width: 100vw;
             justify-self: center;
             margin-bottom: 2rem;
@@ -388,31 +462,6 @@ footer {
             width: 100%;
             padding: 1rem;
         }
-
-        /* #when, #where, #directions, #catalogue-link {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: .5rem;
-            justify-content: space-around;
-        }
-
-        #when h3, #where h3, #directions h3 {
-            padding-top: 1rem;
-            width: 60%;
-            margin: auto;
-        }
-
-        #when p, #where p, #directions p {
-            padding-bottom: 1rem;
-            width: 60%;
-            margin: auto;
-        }
-
-        #catalogue-link {
-            width: 60%;
-            margin: auto;
-            padding-bottom: 10%;
-        } */
 
         /* katalog mobile */
 
@@ -480,12 +529,11 @@ footer {
     
     }
 
+
     /* Tablet */
-    
 
-    /* ---desktop---*/
+    @media (min-width:861px) {
 
-    @media (min-width: 769px){
         #logo img {
             padding: 5%;
         }
@@ -504,7 +552,335 @@ footer {
 
         .banner {
             max-width: 50vw;
-            margin-top: 4rem;
+            margin-top: 2rem;
+            min-height: 65px;  
+        }
+
+        .banner-mb{
+            margin-bottom: 2rem;
+        }
+
+        #kunstler-banner {
+            max-width: 100%;
+        }
+
+        /* Main content styles */
+
+        /* home */
+
+        .home-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .article-1 {
+            display: grid; 
+            justify-content: center;  
+            margin: auto;
+            padding-bottom: 2rem;    
+        }
+
+        #home-img {
+            max-width: 800px;
+            padding-top: 3rem;
+        }
+
+        .kunstler-container #home-img {
+            padding-top: 0rem;
+        }
+        .article-2 {
+            background-color: var(--secondary-bg-color);
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: space-around;
+            gap: 1rem;
+        }
+
+        .section {
+            padding: 2rem;
+        }
+
+        #section-1 {
+            color: var(--main-yellow);
+        }
+
+        #section-2 {
+            background-color: var(--secondary-bg-color);
+            width: 100%;
+        }
+
+        .article-3 {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2.5rem;
+            justify-items: center;
+            margin-bottom: 5rem;
+        }
+      
+        .reportagen-title {
+            grid-column: 1/3;
+            margin:0;
+            padding:2rem;
+        }
+
+       
+        .card {
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color: var(--main-bg-color);
+            height: 435px;
+            width: 400px;
+            border: 1px solid white;
+            border-radius: 3px;
+        }
+
+        .card img, .card a {
+            align-self: flex-start;
+            padding-top: 1rem;
+            justify-self: center;
+        }
+
+        .card-text {
+            align-self: flex-end;
+            justify-self: center;
+            background-color: var(--main-white);
+            max-height: 80px;
+            padding-bottom: 1rem;
+            background-color: var(--main-bg-color);
+            color: var(--main-white);
+            font-size: 0.9rem;
+        }
+
+        /* Offset anchor for link from home page */
+        .anchors::before {
+            display: block;
+            content: '';
+            position: relative;
+            width: 0;
+            height: 200px;
+            margin-top: -200px;
+            visibility: hidden;
+        }
+
+        /* ausstellung desktop */
+
+        .article-ausstellung {
+            display: grid;
+            grid-template-columns: 1fr;
+            min-height: 80vh; 
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        #ausstellung-img {
+            max-width: 800px;
+            justify-self: center;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color: var(--secondary-bg-color);
+            gap: 1rem;
+            justify-items: center;            
+            
+        }
+
+        .details-wrapper {
+            display: grid;
+            gap: 1rem;
+            width: 65%;
+            padding: .5rem;
+        }
+
+        .article-ausstellung img {
+            padding-bottom: 2rem;
+        }
+
+
+        /* images and lightbox */
+
+        
+        .lightbox {
+                       
+            position: fixed;
+            z-index: 1000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--secondary-bg-color);
+            margin: auto;
+            overflow: auto;
+        }
+
+        .lightbox-img-content {
+            display: grid;
+            justify-items: center;
+            align-items: end;
+            
+        }
+        
+        .lightbox-content .biography {
+            width: 80%;
+            justify-self: center;
+            align-self: end;
+            font-size: .9rem;
+            color: var(--main-white);
+            padding: 1rem;
+        }
+
+        .lightbox-content {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            background-color: var(--secondary-bg-color);
+            margin: auto;
+            padding: 0;
+            max-width: 90%;
+            min-width: 90%;
+            height: 700px;
+            opacity: 1;
+        
+        }
+
+        /* The Close Button */
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .images {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+/* --------------------------------------------- */
+        /* About */
+
+        .about .name {
+            grid-area: name;
+            justify-self: start;       
+            margin-right: .75rem; 
+            padding-bottom: 1rem;
+        }
+
+        .about .about-text {
+           
+            grid-area: about;
+            align-self: center;
+        }
+
+
+        .about {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            min-height: 35vh;
+            padding: 3rem;
+            padding-bottom: 5rem;
+            margin-bottom: 2.75rem;
+            grid-template-areas: 
+                "name name name"
+                "about about about"
+                "about about about"
+                "link . .";
+        }
+
+        /* Katalog tablet */
+
+        .katalog-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            min-height: 35vh;
+            padding: 2rem;
+            justify-items: center;
+        }
+
+       
+
+        /* Kontakt tablet */
+
+        .contact-details {
+           
+            display: grid;
+            grid-template-columns:  1fr;
+            gap: 2rem;
+            justify-items: center;
+            padding-bottom: 1rem;
+            /* grid-template-areas: 
+            "p-m p-n . ."; */
+        }
+
+        .contact-details-wrapper {
+            width: 80%;
+        }
+
+    }
+    
+
+    /* ---desktop---*/
+
+    @media (min-width: 1330px){
+        #logo img {
+            padding: 5%;
+        }
+
+        /* Navbar active state  */
+        .active {
+            color: var(--main-bg-color);
+            background-color: var(--main-white);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .bars {
+            display: none;
+        }
+
+        .banner {
+            max-width: 50vw;
+            margin-top: 2rem;
             min-height: 65px;  
         }
 
@@ -532,9 +908,13 @@ footer {
             width: 100%;
         }
 
+        .home-container .article-1 img {
+            margin-top: 3rem;
+        }
+
         #home-img {
-            max-width: 1050px;
-            padding-top: 3rem;
+            max-width: 800px;
+            padding-top: 2rem;
             justify-self: center;
         }
 
@@ -623,17 +1003,17 @@ footer {
             visibility: hidden;
         }
 
-        /* Austellung desktop */
+        /* ausstellung desktop */
 
-        .article-austellung {
+        .article-ausstellung {
             display: grid;
             grid-template-columns: 1fr;
             min-height: 100vh; 
             width: 100%;
         }
 
-        #austellung-img {
-            max-width: 960px;
+        #ausstellung-img {
+            max-width: 800px;
             justify-self: center;
         }
 
@@ -655,7 +1035,7 @@ footer {
             padding: 1rem;
         }
 
-        .article-austellung img {
+        .article-ausstellung img {
             padding-bottom: 2rem;
         }
 

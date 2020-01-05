@@ -5,16 +5,34 @@ let next = document.querySelector('.next');
 let close = document.querySelector('.close');
 
 //nk.addEventListener('click', openLightBox); 
-close.addEventListener('click',closeLightBox);
+close.addEventListener('click', closeLightBox);
 
 previous.addEventListener('click', function() { 
     showNext(-1)}, false);
 next.addEventListener('click', function() {
     showNext(1)});
 
-   let imageIndex = 1;
-   showImages(imageIndex);
+let imageIndex = 1;
+showImages(imageIndex);
 
+let mobile_images = document.querySelectorAll('.images');
+
+document.addEventListener('DOMContentLoaded', styleChangeOnResize);
+window.addEventListener('resize', styleChangeOnResize);
+console.log(window.innerWidth);
+
+ 
+function styleChangeOnResize(){
+   if (window.innerWidth > 861)
+   {
+        mobile_images.forEach(img => img.style.display = 'none');
+        showImages(imageIndex);
+   }  if (window.innerWidth < 861) 
+   {
+        mobile_images.forEach(img => img.style.display = 'block');
+   }
+ 
+}
 
 function closeLightBox() {
    //lightbox.style.display = 'none';
@@ -45,5 +63,3 @@ function showImages(n) {
    }
    images[imageIndex-1].style.display = "block";   
    }
-
-   
