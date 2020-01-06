@@ -122,40 +122,38 @@ li a:hover:not(.active) {
 /* Footer styles */
 
 footer {
+    font-family: 'Andale Mono Regular';
     min-height: 100px;
     z-index: 100;
     flex-shrink: 0;
     background: var(--secondary-bg-color);
     font-size: 1.5em;
-    color: var(--main-grey);
+    color: var(--main-white);
     width: 100%;
-}
-
-#footer-links ul {
-    display: flex;
-    list-style-type: none;
-    text-decoration: none;
-    justify-content: center;   
 }
 
 .pib-logo {
     grid-area: pib;
     align-self: center;
+    justify-self: flex-start;
 }
 
 .fotocentrum-logo {
     grid-area: fc;
     align-self: center;
+    justify-self: flex-start;
 }
 .footer-text {
     grid-area: txt;
     align-self: center;
+    font-size: .9rem;
 }
 
 .footer-logos {
     display: grid;
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas: 
-    ". txt . pib fc .";
+    "soc . txt pib fc .";
 }
 
 .fotocentrum-logo img {
@@ -165,6 +163,16 @@ footer {
 .pib-logo img  {
     width: 75px;
     padding-top: .75rem;
+}
+
+.social {
+    grid-area: soc;
+    align-self: center;
+}
+
+.social-link {
+    color: var(--main-white);
+    text-decoration: none;
 }
 
 /* About  */
@@ -278,6 +286,17 @@ footer {
               background-color: var(--secondary-bg-color);
           }
 
+          .icons-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding-top: 5%;
+          }
+
+          .social-link {
+              justify-self: center;
+              padding: 3rem;
+          }
+
         .container {
             scroll-snap-type: mandatory;
         }
@@ -335,6 +354,7 @@ footer {
             margin-bottom: 3rem;
             gap: 2rem;
             justify-items: center;
+            padding-top: 2rem;
         }
       
         .reportagen-title {
@@ -353,32 +373,29 @@ footer {
             border-radius: 3px;
         }
 
-        .card a {
-            align-self: flex-start;
+        .card a, .card img {
+            align-self: end;
             padding-top: 1rem;
             justify-self: center;
         }
 
         .card-text {
-            align-self: flex-end;
+            align-self: start;
             justify-self: center;
             background-color: var(--main-white);
             max-height: 80px;
             padding-bottom: 1rem;
             background-color: var(--main-bg-color);
             color: var(--main-white);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
         /* Offset anchor for link from home page */
         .anchors::before {
             display: block;
-            content: '';
-            position: relative;
-            width: 0;
-            height: 100px;
-            margin-top: -100px;
-            visibility: hidden;
+            content: '';            
+            height: 300px;
+            margin-top: -300px;
         }
 
           /* images and lightbox mobile */
@@ -435,7 +452,7 @@ footer {
             "link";
             font-size: .9rem;
             max-height: 500px;
-            margin-bottom: 150px;
+            margin-bottom: 150px; 
         }
 
         .about .name {
@@ -473,7 +490,9 @@ footer {
             display: grid;
             gap: 1rem;
             width: 100%;
-            padding: 1rem;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+
         }
 
         /* katalog mobile */
@@ -511,35 +530,53 @@ footer {
             font-size: 0.9rem;
         }
 
-        /* .contact-details-wrapper p a {
-            text-align: center;
-        } */
 
         /* footer mobile */
 
         footer {
-            /* position: fixed; */
             bottom: 0;
             width: 100%;
             height: 2rem;
         }
 
-        #footer-links ul {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            font-size: 12px;
-            list-style-type: none;
-            text-decoration: none;
+        .pib-logo {
+            grid-area: pib;
+            align-self: center;
         }
         
-        #footer-links ul li {
-            display: block;
-            border: .5px solid;
-            border-color: var(--main-bg-color);
-            border-radius: 3px;
+        .fotocentrum-logo {
+            grid-area: fc;
+            align-self: center;
+        }
+        .footer-text {
+            grid-area: txt;
+            align-self: center;
+            font-size: 0.8rem;
+        }
+        
+        .footer-logos {
+            display: grid;
+            padding-right: 1rem;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            "soc txt . pib fc ."
+            "soc txt . pib fc . ";
+        }
+        
+        .fotocentrum-logo img {
+            max-height: 100px;  
+            
+        }
+        
+        .pib-logo img  {
+            width: 50px;           
+            padding-top: .75rem;
+        }   
+        
+        .social {
+            display: none;
         }
 
-    
     }
 
 
@@ -549,6 +586,10 @@ footer {
 
         #logo img {
             padding: 5%;
+        }
+
+        #nav-wrapper .icons-container .social-link {
+            display: none;
         }
 
         /* Navbar active state  */
@@ -575,7 +616,7 @@ footer {
 
         .kunstler-banner { 
             position: fixed;           
-            margin-top: 5.3rem;
+            
         }
 
         /* Main content styles */
@@ -592,7 +633,7 @@ footer {
             display: grid; 
             justify-content: center;  
             margin: auto;
-            padding-bottom: 2rem;    
+            padding: 2rem 3rem;    
         }
 
         #home-img {
@@ -609,11 +650,11 @@ footer {
             display: grid;
             grid-template-columns: 1fr;
             justify-content: space-around;
-            gap: 1rem;
+            padding: 2rem 3rem;
         }
 
         .section {
-            padding: 2rem;
+            padding: 1rem;
         }
 
         #section-1 {
@@ -631,6 +672,7 @@ footer {
             gap: 2.5rem;
             justify-items: center;
             margin-bottom: 5rem;
+            padding-top: 2rem;
         }
       
         .reportagen-title {
@@ -651,20 +693,20 @@ footer {
         }
 
         .card img, .card a {
-            align-self: flex-start;
+            align-self: end;
             padding-top: 1rem;
             justify-self: center;
         }
 
         .card-text {
-            align-self: flex-end;
+            align-self: start;
             justify-self: center;
             background-color: var(--main-white);
             max-height: 80px;
             padding-bottom: 1rem;
             background-color: var(--main-bg-color);
             color: var(--main-white);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
         /* Offset anchor for link from home page */
@@ -705,14 +747,9 @@ footer {
         .details-wrapper {
             display: grid;
             gap: 1rem;
-            width: 65%;
-            padding: .5rem;
+            width: 90%;
+            padding: 2.5rem;
         }
-
-        .article-ausstellung img {
-            padding-bottom: 2rem;
-        }
-
 
         /* images and lightbox */
 
@@ -818,8 +855,7 @@ footer {
             width: 85%;
             margin: auto;
             grid-area: name;
-            justify-self: start;       
-            
+            justify-self: start;     
             padding-bottom: 1rem;
         }
 
@@ -835,6 +871,7 @@ footer {
             margin-top: 1rem;
             grid-area: link;
             justify-self: center;
+            width: 85%;
         }
 
 
@@ -849,7 +886,7 @@ footer {
                 "name name name"
                 "about about about"
                 "about about about"
-                "link . .";
+                "link link link";
         }
 
         /* Katalog tablet */
@@ -866,20 +903,29 @@ footer {
 
         /* Kontakt tablet */
 
-        .contact-details {
-           
+        .contact-details {           
             display: grid;
             grid-template-columns:  1fr;
             gap: 2rem;
             justify-items: center;
-            padding-bottom: 1rem;
+            padding: 1rem;
             /* grid-template-areas: 
             "p-m p-n . ."; */
         }
 
         .contact-details-wrapper {
             width: 80%;
+            text-align: start;
         }
+        
+        .footer-logos {
+            display: grid;            
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            ". soc txt . pib fc"
+            ". soc txt . pib fc";
+        }
+        
 
     }
     
@@ -889,6 +935,10 @@ footer {
     @media (min-width: 1330px){
         #logo img {
             padding: 5%;
+        }
+
+        #nav-wrapper .icons-container .social-link {
+            display: none;
         }
 
         /* Navbar active state  */
@@ -924,9 +974,9 @@ footer {
 
         .article-1 {
             display: grid;
-            grid-template-columns: 1fr;
-            height: 100vh; 
+            grid-template-columns: 1fr;             
             width: 100%;
+            margin-bottom: 3rem;
         }
 
         .home-container .article-1 img {
@@ -935,32 +985,37 @@ footer {
 
         #home-img {
             max-width: 800px;
-            padding-top: 2rem;
+            padding-top: 1rem;
             justify-self: center;
         }
 
         .article-2 {
             background-color: var(--secondary-bg-color);
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 400px 1fr;
             justify-content: space-around;
             grid-template-areas: 
             "sec-1 sec-2"
             "sec-3 sec-3";
             gap: 1rem;
-            padding: 0 5rem;
+            padding: 3rem 5rem;
         }
 
         .section {
-            padding: 2rem;
+            padding: 1rem;
         }
 
         #section-1 {
             grid-area: sec-1;
-            width: 60%;
+            width: 65%;
             justify-self: center;
             align-self: center;
             color: var(--main-yellow);
+            font-size: 0.9rem;
+        }
+
+        #section-1 #author-name {
+            text-align: center;
         }
 
         #section-2 {
@@ -977,6 +1032,7 @@ footer {
             gap: 2.5rem;
             justify-items: center;
             margin-bottom: 5rem;
+            padding-top: 2rem;
         }
       
         .reportagen-title {
@@ -997,30 +1053,28 @@ footer {
         }
 
         .card img, .card a {
-            align-self: flex-start;
+            align-self: end; 
             padding-top: 1rem;
             justify-self: center;
         }
 
         .card-text {
-            align-self: flex-end;
+            align-self: start;
             justify-self: center;
             background-color: var(--main-white);
-            max-height: 80px;
+            /* max-height: 80px; */
             padding-bottom: 1rem;
             background-color: var(--main-bg-color);
             color: var(--main-white);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
         }
 
         /* Offset anchor for link from home page */
-        .anchors::before {
+        .about::before {
             display: block;
-            content: '';
-            position: relative;
-            width: 0;
-            height: 200px;
-            margin-top: -200px;
+            content: 'content';           
+            height: 300px;
+            margin-top: -300px;
             visibility: hidden;
         }
 
@@ -1031,11 +1085,19 @@ footer {
             grid-template-columns: 1fr;
             min-height: 100vh; 
             width: 100%;
+            
         }
 
         #ausstellung-img {
             max-width: 800px;
             justify-self: center;
+        }
+
+        .article-ausstellung .article-1 {
+            display: grid; 
+            justify-content: center;  
+            margin: auto;
+            padding: 0 3rem 5rem 3rem;    
         }
 
         .details {
@@ -1056,9 +1118,6 @@ footer {
             padding: 1rem;
         }
 
-        .article-ausstellung img {
-            padding-bottom: 2rem;
-        }
 
 
         /* images and lightbox */
@@ -1181,6 +1240,7 @@ footer {
             margin-top: 1rem;
             grid-area: link;
             justify-self: center;
+            width: 71%;
             
         }
 
@@ -1195,12 +1255,15 @@ footer {
                 "name name ."
                 "about about about"
                 "about about about"
-                "link . .";
+                "link link link";
         }
 
         .kunstler-banner { 
             position: fixed;           
-            margin-top: 5.3rem;
+        }
+
+        .kunstler-container #home-img {
+            margin-top: 4.2rem;
         }
 
         /* Katalog desktop */
@@ -1233,15 +1296,15 @@ footer {
         .contact-details-wrapper {
             width: 60%;
         }
-/* 
-        .project-manager {
-            grid-area: p-m; 
-            justify-self: center;           
-        }
 
-        .project-name {
-            grid-area: p-n;           
-        } */
+        .footer-logos {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-areas: 
+            ". soc . txt pib fc"
+            ". soc . txt pib fc";
+        }
+        
 
         
 }

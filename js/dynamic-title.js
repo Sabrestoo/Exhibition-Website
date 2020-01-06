@@ -11,8 +11,8 @@ function isInView() {
         let screenWidth = document.body.clientWidth;
       
         if (screenWidth > 860 && artPos.top < (document.body.clientHeight - 250) && artPos.top > -100) {
-            console.log(artPos.top)
-            banner.innerText = 'KUNSTLER';
+            
+            banner.innerText = 'FOTOGRAF*INNEN';
             banner.innerText = article.firstElementChild.innerText;
           
         }
