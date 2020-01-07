@@ -10,7 +10,7 @@ function isInView() {
         let artPos = article.getBoundingClientRect();
         let screenWidth = document.body.clientWidth;
       
-        if (screenWidth > 860 && artPos.top < (document.body.clientHeight - 250) && artPos.top > -100) {
+        if (screenWidth > 860 && artPos.top < (document.body.clientHeight - 375) && artPos.top > -100) {
             
             banner.innerText = 'FOTOGRAF*INNEN';
             banner.innerText = article.firstElementChild.innerText;

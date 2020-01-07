@@ -70,7 +70,9 @@ body {
     text-decoration: none;
 }
 
-
+.map-img {
+    margin-bottom: 1rem;
+}
 
 /* Navigation bar and logo */
 
@@ -185,7 +187,7 @@ footer {
 .details {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--main-bg-color);
 }
 
   /*small image styles */
@@ -208,7 +210,7 @@ footer {
 
 .article-2 .section .quotes p {
     padding: 1rem 0;
-    text-align: justify;
+    text-align: center;
 }
 
 
@@ -396,14 +398,7 @@ footer {
             color: var(--main-white);
             font-size: 0.8rem;
         }
-
-        /* Offset anchor for link from home page */
-        .anchors::before {
-            display: block;
-            content: '';            
-            height: 300px;
-            margin-top: -300px;
-        }
+   
 
           /* images and lightbox mobile */
 
@@ -426,6 +421,8 @@ footer {
             width: 90%;
             margin: auto;
             padding: 1rem 0;
+            font-family: 'Andale Mono Regular';
+            margin-bottom: 3rem;
         }
 
         .lightbox-img-content {
@@ -657,10 +654,15 @@ footer {
             padding-top: 3rem;
         }
 
+        .kunstler-container {
+            padding-bottom: 6rem;
+        }
+
         .kunstler-container #home-img {
             padding-top: 0rem;
             margin-top: 6.2rem;
         }
+
         .article-2 {
             background-color: var(--secondary-bg-color);
             display: grid;
@@ -726,13 +728,11 @@ footer {
         }
 
         /* Offset anchor for link from home page */
-        .anchors::before {
+        .test-link::before {
             display: block;
-            content: '';
-            position: relative;
-            width: 0;
-            height: 200px;
+            content: " ";
             margin-top: -200px;
+            height: 200px;
             visibility: hidden;
         }
 
@@ -754,7 +754,7 @@ footer {
         .details {
             display: grid;
             grid-template-columns: 1fr;
-            background-color: var(--secondary-bg-color);
+            background-color: var(--main-bg-color);
             gap: 1rem;
             justify-items: center;            
             
@@ -787,17 +787,21 @@ footer {
         .lightbox-img-content {
             display: grid;
             justify-items: center;
-            align-items: end;
-            
+            align-items: end;            
         }
+
+     
         
         .lightbox-content .biography {
+     
             width: 80%;
             justify-self: center;
             align-self: end;
             font-size: .9rem;
             color: var(--main-white);
             padding: 1rem;
+            font-family: 'Andale Mono Regular';
+            margin-bottom: 3rem;
         }
 
         .lightbox-content {
@@ -1013,7 +1017,6 @@ footer {
             grid-template-areas: 
             "sec-1 sec-2"
             "sec-3 sec-3";
-            gap: 1rem;
             padding: 3rem 5rem;
         }
 
@@ -1084,16 +1087,7 @@ footer {
             color: var(--main-white);
             font-size: 0.8rem;
         }
-
-        /* Offset anchor for link from home page */
-        .about::before {
-            display: block;
-            content: 'content';           
-            height: 300px;
-            margin-top: -300px;
-            visibility: hidden;
-        }
-
+    
         /* ausstellung desktop */
 
         .article-ausstellung {
@@ -1101,7 +1095,7 @@ footer {
             grid-template-columns: 1fr;
             min-height: 100vh; 
             width: 100%;
-            
+
         }
 
         #ausstellung-img {
@@ -1119,9 +1113,10 @@ footer {
         .details {
             display: grid;
             grid-template-columns: 1fr;
-            background-color: var(--secondary-bg-color);
+            background-color: var(--main-bg-color);
             gap: 1rem;
-            justify-items: center;            
+            justify-items: center;  
+            padding-bottom: 3rem;          
             /* grid-template-areas: 
             ". when where directions ."
             ". link . . ."; */
@@ -1167,6 +1162,8 @@ footer {
             font-size: .9rem;
             color: var(--main-white);
             padding: 1rem;
+            font-family: 'Andale Mono Regular';
+            margin-bottom: 3rem;
         }
 
         .lightbox-content {
@@ -1304,7 +1301,8 @@ footer {
             grid-template-columns:  1fr;
             gap: 2rem;
             justify-items: center;
-            padding-bottom: 1rem;
+            padding-bottom: 2rem;
+            margin-bottom: 2rem;
             /* grid-template-areas: 
             "p-m p-n . ."; */
         }
@@ -1358,4 +1356,5 @@ footer {
   .dropdown:hover .dropdown-content {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    align-items: center;
   }
