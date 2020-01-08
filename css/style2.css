@@ -666,12 +666,25 @@ footer {
         .active {
             color: var(--main-bg-color);
             background-color: var(--main-white);
-            height: 80%;
-            
+            height: 80%;            
         }
 
         .bars {
             display: none;
+        }
+
+
+        #lang-en {
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+            margin-left: 0.2rem;
+        }
+
+        #lang-de {
+            padding-right: 0.2rem;
+            padding-left: 0.2rem;
+            margin-left: 0.3rem;
+            margin-right: 0.2rem;
         }
 
         .banner {
