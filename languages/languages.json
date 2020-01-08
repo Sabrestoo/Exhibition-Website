@@ -1,0 +1,20 @@
+// docs page
+
+    { "artists": {
+        "name": "name",
+        "report-title": "title",
+            "paragraphs": {
+                "p1": "paragraph data",
+                "p2": "paragraph data",
+                "p3": "paragraph data",
+                "p4": "paragrpah data",
+                "p5": "paragraph data"
+                    }  
+                 }
+
+    }
+
+// navbar
+    { ""
+
+    }

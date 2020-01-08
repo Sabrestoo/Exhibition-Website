@@ -1,0 +1,1 @@
+localStorage.setItem('URL', 'www.footprints-reportage.de');
