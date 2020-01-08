@@ -35,6 +35,12 @@
     animation-name: zoom;
     animation-duration: 0.6s;
   }
+
+  .lightbox-img-content {
+    max-width: 500px;
+ 
+    margin: auto;
+  }
   
   .lb-content img{    
     max-height: 95vh;

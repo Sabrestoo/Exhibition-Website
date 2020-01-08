@@ -31,13 +31,11 @@ function styleChangeOnResize(){
    {
         mobile_images.forEach(img => img.style.display = 'block');
    }
- 
-}
+ }
 
 function closeLightBox() {
    //lightbox.style.display = 'none';
    window.location.replace('../index.html#LK');
-
 }
 
 //Controls
