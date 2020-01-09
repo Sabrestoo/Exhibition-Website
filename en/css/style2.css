@@ -7,6 +7,14 @@
     --main-grey: #767365;
 }
 
+/* background-color:#16202F; //main
+   background-color: #283344; //secondary
+   background-color: #FFD300; //yellow
+   background-color: #FFFFFF; //White
+   background-color: #191750; //blue
+   background-color: #767365; //grey
+    */
+
  @font-face {
     font-family: 'DIN Alternate Bold';
     font-style: normal;
@@ -43,6 +51,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color:#16202F;
     background-color: var(--main-bg-color);
 }
 
@@ -52,7 +61,9 @@ body {
 
 .banner {
     width: 100%;
+    background-color: #FFD300;
     background-color: var(--main-yellow);
+    color:#16202F;
     color: var(--main-bg-color);
     padding: 1em;
     text-align: end;
@@ -62,7 +73,9 @@ body {
 .container {
     /* flex container for sticky footer */
     flex: 1 0 auto; 
+    background-color:#16202F;
     background: var(--main-bg-color);
+    color: #FFFFFF;
     color: var(--main-white);
     padding-top: 5%;
     font-family: 'Andale Mono Regular';
@@ -73,6 +86,7 @@ body {
    }
 
 .link {
+    color: #FFD300;
     color: var(--main-yellow);
     text-decoration: none;
 }
@@ -99,6 +113,7 @@ body {
 #nav-wrapper {
     position: fixed;
     width: 100%;
+    background-color: #283344;
     background-color: var(--secondary-bg-color);
     display: flex;
     display: -webkit-flex;
@@ -119,6 +134,7 @@ body {
 
 li a {
     display: block;
+    color: #FFFFFF;
     color: var(--main-white);
     text-align: center;
     padding: 4px 16px;
@@ -127,11 +143,13 @@ li a {
 }
 
 li a:hover:not(.active) {
+    background-color:#16202F;
     background-color: var(--main-bg-color);
 }
 
 .dropdown {
     width: 100%; 
+    color:#16202F;
     color: var(--main-bg-color);
     text-align: end;
     overflow: hidden;
@@ -144,6 +162,7 @@ li a:hover:not(.active) {
     width: 100vw;
     position: absolute;
     left: 0;
+    background-color:#16202F;
     background-color: var(--main-bg-color);
     min-width: 160px;
     /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
@@ -152,6 +171,7 @@ li a:hover:not(.active) {
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown .dropdown-content a:hover {
+    background-color: #283344;
     background-color: var(--secondary-bg-color);
   }
   
@@ -175,8 +195,10 @@ footer {
     min-height: 100px;
     z-index: 100;
     flex-shrink: 0;
+    background: #283344;
     background: var(--secondary-bg-color);
     font-size: 1.5em;
+    color: #FFFFFF;
     color: var(--main-white);
     width: 100%;
 }
@@ -220,6 +242,7 @@ footer {
 }
 
 .social-link {
+    color: #FFFFFF;
     color: var(--main-white);
     text-decoration: none;
 }
@@ -227,6 +250,7 @@ footer {
 /* About  */
 
 .about {
+    background-color: #283344;
     background-color: var(--secondary-bg-color);
     width: 100%;
 }
@@ -234,6 +258,7 @@ footer {
 .details {
     display: grid;
     grid-template-columns: 1fr;
+    background-color:#16202F;
     background-color: var(--main-bg-color);
 }
 
@@ -273,6 +298,7 @@ footer {
         #bar1, #bar2, #bar3 {
             width: 35px;
             height: 5px;
+            background-color: #FFD300;
             background-color: var(--main-yellow);
             margin: 6px 0;
             transition: 0.4s;
@@ -305,6 +331,7 @@ footer {
             padding: 0; 
             height: 85px;
             max-width: 100vw;
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             top: 0;
             left: 0;
@@ -315,6 +342,7 @@ footer {
           
           #nav-bar {
             padding-top: 100px;
+            background:#16202F;
             background: var(--main-bg-color);
             position: fixed; 
             top: 0;
@@ -334,6 +362,7 @@ footer {
           }
 
           #nav-bar li a:hover {
+            background-color: #283344;
               background-color: var(--secondary-bg-color);
           }
 
@@ -390,6 +419,7 @@ footer {
 
 
         .article-2 {
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             display: grid;
             grid-template-columns: 1fr;  
@@ -403,6 +433,7 @@ footer {
         }
 
         #section-1 {
+            color: #FFD300;
             color: var(--main-yellow);
             padding: 0 5rem;
         }   
@@ -429,6 +460,7 @@ footer {
             scroll-snap-align: start;
             display: grid;
             grid-template-columns: 1fr;
+            background-color:#16202F;
             background-color: var(--main-bg-color);
             max-height: 435px;
             max-width: 100%;
@@ -447,10 +479,13 @@ footer {
         .card-text {
             align-self: start;
             justify-self: center;
+            background-color: #FFFFFF;
             background-color: var(--main-white);
             max-height: 80px;
             padding-bottom: 1rem;
+            background-color:#16202F;
             background-color: var(--main-bg-color);
+            color: #FFFFFF;
             color: var(--main-white);
             font-size: 0.8rem;
         }
@@ -459,7 +494,8 @@ footer {
           /* images and lightbox mobile */
 
         .lightbox {
-            max-width: 100vw;   
+            max-width: 100vw; 
+            background-color: #283344;  
             background-color: var(--secondary-bg-color);                    
         }
         
@@ -473,6 +509,7 @@ footer {
         }
 
         .lightbox-content .biography {
+            color: #FFFFFF;
             color: var(--main-white);
             width: 90%;
             margin: auto;
@@ -664,7 +701,9 @@ footer {
 
         /* Navbar active state  */
         .active {
+            color:#16202F;
             color: var(--main-bg-color);
+            background-color: #FFFFFF;
             background-color: var(--main-white);
             height: 80%;            
         }
@@ -740,6 +779,7 @@ footer {
         }
 
         .article-2 {
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             display: grid;
             grid-template-columns: 1fr;
@@ -752,10 +792,12 @@ footer {
         }
 
         #section-1 {
+            color: #FFD300;
             color: var(--main-yellow);
         }
 
         #section-2 {
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             width: 100%;
         } 
@@ -780,6 +822,7 @@ footer {
         .card {
             display: grid;
             grid-template-columns: 1fr;
+            background-color:#16202F;
             background-color: var(--main-bg-color);
             height: 435px;
             width: 400px;
@@ -797,10 +840,13 @@ footer {
         .card-text {
             align-self: start;
             justify-self: center;
+            background-color: #FFFFFF;
             background-color: var(--main-white);
             max-height: 80px;
             padding-bottom: 1rem;
+            background-color:#16202F;
             background-color: var(--main-bg-color);
+            color: #FFFFFF;
             color: var(--main-white);
             font-size: 0.8rem;
         }
@@ -832,6 +878,7 @@ footer {
         .details {
             display: grid;
             grid-template-columns: 1fr;
+            background-color:#16202F;
             background-color: var(--main-bg-color);
             gap: 1rem;
             justify-items: center;            
@@ -857,6 +904,7 @@ footer {
             top: 0;
             width: 100vw;
             height: 100vh;
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             margin: auto;
             overflow: auto;
@@ -876,6 +924,7 @@ footer {
             justify-self: center;
             align-self: end;
             font-size: .9rem;
+            color: #FFFFFF;
             color: var(--main-white);
             padding: 1rem;
             font-family: 'Andale Mono Regular';
@@ -886,6 +935,7 @@ footer {
             position: relative;
             display: grid;
             grid-template-columns: 1fr;
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             margin: auto;
             padding: 0;
@@ -1040,7 +1090,9 @@ footer {
 
         /* Navbar active state  */
         .active {
+            color:#16202F;
             color: var(--main-bg-color);
+            background-color: #FFFFFF;
             background-color: var(--main-white);
             
         }
@@ -1088,6 +1140,7 @@ footer {
 
     
         .article-2 {
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             display: grid;
             grid-template-columns: 37% 63%;
@@ -1107,6 +1160,7 @@ footer {
             width: 70%; 
             justify-self: center;
             align-self: center;
+            color: #FFD300;
             color: var(--main-yellow);
             font-size: 0.9rem;
         }
@@ -1143,6 +1197,7 @@ footer {
         .card {
             display: grid;
             grid-template-columns: 1fr;
+            background-color:#16202F;
             background-color: var(--main-bg-color);
             height: 435px;
             width: 400px;
@@ -1159,10 +1214,13 @@ footer {
         .card-text {
             align-self: start;
             justify-self: center;
+            background-color: #FFFFFF;
             background-color: var(--main-white);
             /* max-height: 80px; */
             padding-bottom: 1rem;
+            background-color:#16202F;
             background-color: var(--main-bg-color);
+            color: #FFFFFF;
             color: var(--main-white);
             font-size: 0.8rem;
         }
@@ -1194,6 +1252,7 @@ footer {
         .details {
             display: grid;
             grid-template-columns: 1fr;
+            background-color:#16202F;
             background-color: var(--main-bg-color);
             gap: 1rem;
             justify-items: center;  
@@ -1224,6 +1283,7 @@ footer {
             top: 0;
             width: 100vw;
             height: 100vh;
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             margin: auto;
             overflow: auto;
@@ -1241,6 +1301,7 @@ footer {
             justify-self: center;
             align-self: end;
             font-size: .9rem;
+            color: #FFFFFF;
             color: var(--main-white);
             padding: 1rem;
             font-family: 'Andale Mono Regular';
@@ -1251,6 +1312,7 @@ footer {
             position: relative;
             display: grid;
             grid-template-columns: 1fr;
+            background-color: #283344;
             background-color: var(--secondary-bg-color);
             margin: auto;
             padding: 0;
